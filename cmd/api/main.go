@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	server := api.NewServer("localhost:8080")
+	server := api.NewServer(":8080")
 
 	if err := server.Run(); err != nil {
 		fmt.Printf("Failed to run server %v", err)
